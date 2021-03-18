@@ -1,0 +1,12 @@
+@mixin display-flex ($value){
+    display: $value;
+    
+}
+
+@mixin  btn-menu-aft-bfr ($width: 0, $height: 0) {
+    content: '';
+    position: absolute;
+    background-color:  $texColor;
+    width: $width;
+    height: $height;
+}

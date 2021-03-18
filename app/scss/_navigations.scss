@@ -1,0 +1,36 @@
+.navigation-wrapper {
+    padding: 25px 0;
+    border-bottom: 1px solid #48555B;
+}
+
+.navogation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    color: $texColor;
+    &__item {
+        list-style: none;
+        margin-right: 20px;
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+    &__link {
+        color: $texColor;
+        font-weight: 600;
+        transition: all .3s ease;
+        padding: 5px 10px;
+        border-bottom: 1px solid transparent;
+        border-top: 1px solid transparent;
+        &:hover{
+            border-bottom: 1px solid $hoverMenu;
+            border-top: 1px solid $hoverMenu;
+            color: $hoverMenu;
+        }
+    }
+}
