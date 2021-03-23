@@ -6,7 +6,7 @@
 @mixin  btn-menu-aft-bfr ($width: 0, $height: 0) {
     content: '';
     position: absolute;
-    background-color:  $texColor;
+    background-color:  $colorAllText;
     width: $width;
     height: $height;
 }

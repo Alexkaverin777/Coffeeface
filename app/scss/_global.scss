@@ -1,7 +1,7 @@
 body {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
-    color: $texColor;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color: #fff
 }
 *{
     box-sizing: border-box;
@@ -9,8 +9,16 @@ body {
 input {
     outline: none;
 }
+.dn {
+    display: none;
+}
+
+section {
+    color: $colorAllText;
+}
+
 .container {
-    max-width: 945px;
+    max-width: 1315px;
     margin: 0 auto;
 }
 
@@ -26,7 +34,7 @@ input {
         width: 25px;
         display: block;
         height: 2px;
-        background-color: $texColor;
+        background-color: #fff;
         position: relative;
         z-index: 20;
         &::after {
@@ -51,12 +59,6 @@ a{
     text-decoration: none;
 }
 
-.logo {
-    align-items: flex-end;
-    img {
-        margin: 0 auto;
-    }
-}
 
 .title {
     text-align: center;
@@ -68,17 +70,17 @@ a{
         content: '';
         width: 30px;
         height: 2px;
-        background-color: $colorBgButton;
+        background-color: #ffff;
         position: absolute;
         bottom: 5px;
 
     }
 }
 .btn {
-    background-color: $colorBgButton;
-    font-size: 13px;
-    line-height: 18px;
-    padding: 10px 30px;
+    background-color: $colorBlack;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 20px 100px;
     color: #fff;
     border: none;
     transition: all .3s ease;
@@ -86,7 +88,7 @@ a{
     outline: none;
     min-width: 143px;
     &:hover {
-        box-shadow: 0 1px 6px 0 rgba(0,0,0, .5);
+        box-shadow: 0 1px 15px 0 rgba(0,0,0, .5);
     }
 
 

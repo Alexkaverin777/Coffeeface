@@ -1,0 +1,40 @@
+.coffeeface-wrapper {
+	display: flex;
+	position: relative;
+
+}
+
+
+.coffeeface {
+	background-color: #000;
+	color: $colorWhite;
+	padding: 130px 0;
+
+	&__content {
+		text-align: center;
+		flex-basis: 37%;
+		padding: 0 30px;
+
+		.logo {
+			display: flex;
+			justify-content: center;
+			margin-bottom: 26px;
+		}
+	}
+	&__text {
+		font-weight: 300;
+		font-size: 22px;
+		line-height: 170%;
+	}
+	&__img {
+		position: relative;
+		width: 50%;
+		img {
+			position: absolute;
+			top: -200px;
+			right: 0;
+		}
+	}
+
+}
+
