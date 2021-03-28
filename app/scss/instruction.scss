@@ -1,0 +1,39 @@
+.instruction {
+	background-image: url("../img/HowToUse.png");
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-color: rgba(252,209,194, .2);
+	padding: 128px 0;
+	text-align-last: center;
+
+
+
+	.instruction-wrapper {
+		margin-top: 60px;
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+	}
+}
+
+.instruction-item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	&__img {
+		border: 1px solid rgba(138, 81, 55, 1);
+		border-radius: 50%;
+		padding: 35px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&__description {
+		font-size: 20px;
+		line-height: 150%;
+		margin-top: 10px;
+
+	}
+}
+

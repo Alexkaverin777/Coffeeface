@@ -1,0 +1,31 @@
+.exfoliate {
+	background: url("../img/exfoliate.png") no-repeat center;
+	background-size: 100%;
+	height: 700px;
+	text-align: center;
+	position: relative;
+	.exfoliate-title {
+
+		font-weight: 200;
+		font-size: 60px;
+		line-height: 120%;
+		color: #ffffff;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		margin-left: -150px;
+		margin-top: -81px;
+		max-width: 300px;
+		z-index: 20;
+	}
+	&__overlay {
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		z-index: 10;
+		background: rgba(0,0,0, .1);
+	}
+}
+
