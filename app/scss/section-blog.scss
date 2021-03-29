@@ -1,0 +1,24 @@
+@import "vars";
+
+.section-blog {
+	background-color: $colorWhite;
+}
+
+.blog {
+	margin-top: -280px;
+	position: relative;
+	z-index: 100;
+	text-align: center;
+	&__title {
+
+		color: $colorWhite;
+		margin-bottom: 54px;
+	}
+	.blog-wrapper {
+		display: flex;
+
+		&__text {
+			margin-top: 22px;
+		}
+	}
+}

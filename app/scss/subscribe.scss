@@ -1,0 +1,36 @@
+.subscribe {
+	text-align: center;
+	position: relative;
+	padding: 104px 0 136px 0;
+	background: rgb(252,209,194);
+	background: linear-gradient(95deg, rgba(252,209,194,0.3) 0%, rgba(255,255,255,1) 72%);
+	&__img {
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+
+
+	.subscribe__content {
+		max-width: 740px;
+	}
+	&__title {
+		margin-bottom: 27px;
+	}
+	&__text {
+		font-weight: 300;
+		font-size: 22px;
+	}
+
+	.subscribe-form{
+		padding-top: 50px;
+		display: flex;
+		justify-content: center;
+
+		&__input {
+			padding: 0 20px;
+			border-color: #000;
+			background: transparent;
+		}
+	}
+}

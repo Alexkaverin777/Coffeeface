@@ -1,50 +1,118 @@
-.section-slider {
-	text-align-last: center;
-	position: relative;
-	.container {
-		overflow: hidden;
-	}
-
+.section-slider  {
+	padding-top: 90px;
+	padding-bottom: 280px;
+	text-align: center;
 }
 
 
-.slider-users{
-	transform: translateX(-25%);
-	width: 2600px;
-	position: relative;
-	overflow: hidden;
-	margin: auto;
-	height: 400px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-
+.slider-users {
 	.slider-item {
-		&.active {
-			opacity: 1;
-		}
-
-		margin: 0 70px;
 		opacity: .5;
-		width: 650px;
-		animation-name: fade;
-		animation-duration: 1.5s;
+		padding: 15px 50px;
+		&__user {
+			text-align: center;
 
-		&__foto {
-			display: inline-block;
 		}
+		&__foto img {
+			margin: 0 auto;
 
-
+		}
+		&__text {
+			max-width: 650px;
+			margin: 0 auto;
+		}
 	}
 }
 
-@keyframes fade {
-	/* Устанавливаем и изменяем степень прозрачности: */
-	from {
-		opacity: 0.4
+.slider-item.slick-active {
+	opacity: 1;
+}
+
+.slider-users-prev, .slider-users-next {
+	border: 1px solid #8A5137;
+	transition: background-color .3s ease;
+	width: 45px;
+	height: 45px;
+	border-radius: 50%;
+	background-color: transparent;
+	z-index: 20;
+
+	&:hover {
+		background-color: #8A5137;
+		span {
+			background-color: #fff;
+		}
 	}
-	to {
-		opacity: 1
+
+}
+
+.slider-users-prev, .slider-users-next {
+	position: absolute;
+	top: 10%;
+	left: 35%;
+	&:before {
+		content: '';
+		width: 35px;
+		height: 2px;
+		margin-top: -1px;
+		position: absolute;
+		top: 50%;
+		right: -35px;
+		background-color: #8A5137;
+	}
+	span {
+		position: absolute;
+		top: 50%;
+		margin-top: -1px;
+		right: 0;
+		width: 23px;
+		height: 2px;
+		border-bottom-right-radius: 5px;
+		border-top-right-radius: 5px;
+		background-color: #8A5137;
+		transition: background-color .3s ease;
+		&:after, &:before {
+			content: '';
+			position: absolute;
+			width: 10px;
+			height: 2px;
+			left: -2px;
+			top: -3px;
+			border-radius: 5px;
+			transform: rotate(-45deg);
+			background-color: inherit;
+			z-index: 20;
+		}
+		&:before {
+			top: 3px;
+			transform: rotate(45deg);
+
+		}
 	}
 }
+
+.slider-users-next {
+	left: auto;
+	right: 35%;
+	&:before {
+		left: -35px;
+	}
+	span {
+		left: 0;
+		&:after, &:before {
+			left: auto;
+			right: -3px;
+			top: -3px;
+			transform: rotate(45deg);
+		}
+		&:before {
+			top: 3px;
+			transform: rotate(-45deg);
+
+		}
+	}
+}
+
+
 //object-fit: cover;
+

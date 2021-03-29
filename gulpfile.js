@@ -43,7 +43,9 @@ function images(params) {
 
 function scripts() {
     return src([
-        // 'node_modules/jquery/dist/jquery.js',
+        'node_modules/jquery/dist/jquery.js',
+        // 'node_modules/owl-carousel/owl-carousel/owl.carousel.min.js',
+        'node_modules/slick-carousel/slick/slick.min.js',
         'app/js/main.js'//должен быть последним
     ])
     .pipe(concat('main.min.js'))
@@ -54,7 +56,7 @@ function scripts() {
 
 //функция для обработки стилей 
 function styles (){
-    return src('app/scss/**/*.scss')
+    return src('app/scss/**/*.*')
     .pipe(scss({outputStyle: 'compressed'}))//exspandet
     .pipe(concat('style.min.css'))
     .pipe(autoprefixer({

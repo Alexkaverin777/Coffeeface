@@ -1,9 +1,13 @@
+@import "../../node_modules/slick-carousel/slick/slick.scss";
+@import "../../node_modules/slick-carousel/slick/slick-theme.css";
+
 body {
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
-    color: #fff
+    color: #fff;
 }
-*{
+
+body *{
     box-sizing: border-box;
 }
 input {
@@ -27,6 +31,7 @@ section {
     max-width: 1315px;
     margin: 0 auto;
 }
+
 
 .open-menu-btn {
     display: none;
