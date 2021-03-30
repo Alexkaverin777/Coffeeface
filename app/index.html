@@ -26,30 +26,35 @@
                     <img src="./img/coffee-face-logo.png" alt="Логотип Coffeeface">
                 </a>
             </div>
-            <button class="open-menu-btn dn">Menu</button>
+            <button class="open-menu-btn isActive">Menu</button>
             <nav class="header-menu">
                 <li class="header-menu__item">
-                    <a href="#" class="header-menu__link">Home</a>
+                    <a href="#offer" class="header-menu__link scroll-link">Home</a>
                 </li>
                 <li class="header-menu__item">
-                    <a href="#" class="header-menu__link">Shop</a>
+                    <a href="#benefit" class="header-menu__link scroll-link">Shop</a>
                 </li>
                 <li class="header-menu__item">
-                    <a href="#" class="header-menu__link">About</a>
+                    <a href="#exfoliate" class="header-menu__link scroll-link">About</a>
                 </li>
                 <li class="header-menu__item">
-                    <a href="#" class="header-menu__link">What is Coffeeface</a>
+                    <a href="#instruction" class="header-menu__link scroll-link">What is Coffeeface</a>
                 </li>
                 <li class="header-menu__item">
-                    <a href="#" class="header-menu__link">Contact</a>
+                    <a href="#footer" class="header-menu__link scroll-link">Contact</a>
                 </li>
             </nav>
-            <div class="header-cart">
-                <img src="./img/cart.svg" alt="cart">
-                <span class="header-cart__quantity">3</span>
+            <div class="search-card">
+                <button class="search">
+                    <i class="fas fa-search"></i>
+                </button>
+                <div class="header-cart">
+                    <img src="./img/cart.svg" alt="cart">
+                    <span class="header-cart__quantity">3</span>
+                </div>
             </div>
         </div>
-        <div class="offer">
+        <div class="offer" id="offer">
             <div class="offer__img-girls">
                 <img src="./img/header-womens.png" alt="girls">
             </div>
@@ -65,7 +70,7 @@
         </div>
     </div>
 </header>
-<section class="coffeeface" id="coffeeface">
+<section class="coffeeface dn" id="coffeeface">
     <div class="container">
         <div class="coffeeface-wrapper">
             <div class="coffeeface__content">
@@ -85,7 +90,7 @@
         </div>
     </div>
 </section>
-<section class="benefit" id="benefit">
+<section class="benefit dn" id="benefit">
     <div class="container">
         <div class="benefit-wrapper">
             <div class="benefit__img">
@@ -97,11 +102,11 @@
                 </h3>
                 <div class="benefit__reviews">
                     Reviews
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
                 </div>
                 <p class="benefit__text">
                     Stabilized caffeine works hard to immediately stimulate collagen production in your skin, plus it
@@ -118,7 +123,7 @@
         </div>
     </div>
 </section>
-<section class="exfoliate" id="exfoliate">
+<section class="exfoliate dn" id="exfoliate">
     <div class="container">
         <h1 class="exfoliate-title">
             Exfoliate. Serum. Moisturize.
@@ -126,7 +131,7 @@
         <div class="exfoliate__overlay"></div>
     </div>
 </section>
-<section class="instruction">
+<section class="instruction dn" id="instruction">
     <div class="container">
         <h2 class="instruction__little-title">
             How to use the CoffeeFace
@@ -159,7 +164,7 @@
         </div>
     </div>
 </section>
-<section class="section-slider">
+<section class="section-slider dn" id="section-slider">
     <h2 class="section-slider__title">
         Testimonials
     </h2>
@@ -167,7 +172,7 @@
         <div class="slider-item ">
             <div class="slider-item__user">
                 <div class="slider-item__foto">
-                    <img src="./img/userFotoAnna.png" alt="user foto AnnaK." >
+                    <img src="./img/userFotoAnna.png" alt="user foto AnnaK.">
                 </div>
                 <h5 class="slider-item__name">Anna K.</h5>
             </div>
@@ -181,7 +186,7 @@
         <div class="slider-item ">
             <div class="slider-item__user">
                 <div class="slider-item__foto">
-                    <img src="./img/userFotoAnna.png" alt="user foto AnnaK." >
+                    <img src="./img/userFotoAnna.png" alt="user foto AnnaK.">
                 </div>
                 <h5 class="slider-item__name">Anna K.</h5>
             </div>
@@ -195,7 +200,7 @@
         <div class="slider-item">
             <div class="slider-item__user">
                 <div class="slider-item__foto">
-                    <img src="./img/userFotoAnna.png" alt="user foto AnnaK." >
+                    <img src="./img/userFotoAnna.png" alt="user foto AnnaK.">
                 </div>
                 <h5 class="slider-item__name">Anna K.</h5>
             </div>
@@ -209,14 +214,14 @@
     </div>
 
 </section>
-<section class="section-images" id="section-blog">
+<section class="section-images dn" id="section-images">
     <div class="container">
         <div class="section-images__block-img">
             <img src="./img/aloe.png" alt="Aloe" class="section-images__img">
         </div>
     </div>
 </section>
-<section class="section-blog">
+<section class="section-blog dn" id="section-blog">
     <div class="container">
         <div class="blog">
             <h2 class="blog__title">Blog</h2>
@@ -224,6 +229,7 @@
                 <div class="blog-wrapper__item">
                     <div class="blog-wrapper__img">
                         <img src="./img/kari-shea.png" alt="">
+                        <div class="blog-overlay"></div>
                     </div>
                     <p class="blog-wrapper__text">
                         Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print
@@ -232,6 +238,7 @@
                 <div class="blog-wrapper__item">
                     <div class="blog-wrapper__img">
                         <img src="./img/kari-shea2.png" alt="">
+                        <div class="blog-overlay"></div>
                     </div>
                     <p class="blog-wrapper__text">
                         Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print
@@ -240,6 +247,7 @@
                 <div class="blog-wrapper__item">
                     <div class="blog-wrapper__img">
                         <img src="./img/kari-shea3.png" alt="">
+                        <div class="blog-overlay"></div>
                     </div>
                     <p class="blog-wrapper__text">
                         Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print
@@ -252,7 +260,7 @@
         </div>
     </div>
 </section>
-<section class="subscribe">
+<section class="subscribe dn" id="subscribe">
     <div class="container">
         <div class="subscribe__content">
             <h2 class="subscribe__title">
@@ -264,7 +272,8 @@
                 information, see our privacy policy.
             </p>
             <form class="subscribe-form" action="#">
-                <input class="subscribe-form__input" type="email" pattern=".+@+.+" size="30" placeholder="Your email" required>
+                <input class="subscribe-form__input" type="email" pattern=".+@+.+" size="30" placeholder="Your email"
+                       required>
                 <button class="btn subscribe-form__btn">Subscribe</button>
             </form>
         </div>
@@ -273,7 +282,7 @@
         <img src="./img/man.png" alt="">
     </div>
 </section>
-<section class="face" id="face">
+<section class="face dn" id="face">
     <div class="container-full">
         <h2 class="face__title">
             @coffee_face
@@ -299,12 +308,13 @@
         </p>
     </div>
 </section>
-
-
-<footer class="footer" id="footer">
+<footer class="footer dn" id="footer">
     <div class="container">
+        <div class="blot">
+            <img src="./img/footer-group.png" alt="blot">
+        </div>
         <div class="wrapper-logo-social">
-            <div class="logo footer-logo" >
+            <div class="logo footer-logo">
                 <a href="#header">
                     <img src="./img/coffee-face-logo.png" alt="Logo">
                 </a>
@@ -345,7 +355,6 @@
         </div>
     </div>
 </footer>
-
 <script src="js/main.min.js" defer></script>
 </body>
 </html>

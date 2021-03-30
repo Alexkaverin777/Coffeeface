@@ -2,12 +2,9 @@
 	background-color: #000;
 	color: #fff;
 	padding-top: 64px;
-
-	.footer-logo {
+	.container {
 		position: relative;
-		z-index: 20;
 	}
-
 	.wrapper-logo-social {
 		display: flex;
 		justify-content: space-between;
@@ -82,4 +79,9 @@
 		justify-content: space-between;
 		padding: 20px 0;
 	}
+}
+.blot {
+	position: absolute;
+	bottom: 20%;
+	left: -10%;
 }

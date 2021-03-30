@@ -1,89 +1,221 @@
-
-
 .header {
-	background:linear-gradient(rgba(250,178,152,0.2) 0%, rgba(244,222,214,.2) 0%, rgba(248,234,229,.15) 0%);
-}
-.black-line {
-	background-color: $colorBlack;
-	padding: 10px 0;
-	text-align: center;
-	color: $colorWhite;
-	&__text {
-		font-size: 12px;
-	}
-}
-.navigation {
-	padding-top: 40px;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
-.header-menu {
-	display: flex;
-	font-size: 16px;
+	background: linear-gradient(rgba(250, 178, 152, 0.2) 0%, rgba(244, 222, 214, .2) 0%, rgba(248, 234, 229, .15) 0%);
 
-	&__item {
-		margin-right: 60px;
+	.search {
+		display: none;
 	}
-	&__item:last-child {
-		margin-right: 0;
+
+	.black-line {
+		background-color: $colorBlack;
+		padding: 10px 0;
+		text-align: center;
+		color: $colorWhite;
+
+		&__text {
+			font-size: 12px;
+		}
 	}
-	&__link {
-		color: #000;
-		padding: 7px;
-		transition: all .3s ease;
-		border-bottom: 1px solid transparent;
-		&:hover {
-			color: #8A5137;
-			border-bottom-color: #8A5137;
+
+	.navigation {
+		padding-top: 40px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.header-menu {
+		display: flex;
+		font-size: 16px;
+
+		&__item {
+			margin-right: 60px;
+		}
+
+		&__item:last-child {
+			margin-right: 0;
+		}
+
+		&__link {
+			color: #000;
+			padding: 7px;
+			transition: all .3s ease;
+			border-bottom: 1px solid transparent;
+
+			&:hover {
+				color: #8A5137;
+				border-bottom-color: #8A5137;
+			}
+		}
+	}
+
+	.header-cart {
+		position: relative;
+		cursor: pointer;
+		width: 20px;
+		height: 20px;
+
+		&__quantity {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			position: absolute;
+			font-size: 10px;
+			top: -5px;
+			right: -4px;
+			width: 14px;
+			height: 14px;
+			border-radius: 50%;
+			background-color: #000000;
+		}
+	}
+
+	.offer {
+		margin-top: 50px;
+		display: flex;
+		align-items: center;
+
+		&__img-girls {
+			flex-shrink: 1;
+		}
+	}
+
+	.offer-content {
+		flex-shrink: 2;
+		text-align: center;
+		color: $colorAllText;
+
+		&__title {
+			font-weight: 300;
+			font-size: 36px;
+			line-height: 140%;
+		}
+
+		&__subtitle {
+			font-size: 20px;
+			line-height: 30px;
+			margin-top: 13px;
+			margin-bottom: 35px;
+			padding: 0 100px;
 		}
 	}
 }
 
-.header-cart {
-	position: relative;
-	width: 20px;
-	height: 20px;
-	&__quantity {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		position: absolute;
-		font-size: 10px;
-		top: -5px;
-		right: -4px;
-		width: 14px;
-		height: 14px;
-		border-radius: 50%;
-		background-color: #000000;
+@media screen and (max-width: 1200px) {
+	.header {
+		.navigation {
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+
+		.offer {
+			&__img-girls {
+				flex-shrink: 2;
+			}
+		}
 	}
+
 }
 
-.offer {
-	display: flex;
-	align-items: center;
+@media screen and (max-width: 992px) {
+	.header {
+		.logo {
+			order: 1;
+		}
 
-	&__img-girls {
-		flex-shrink: 1;
+		.open-menu-btn {
+			display: block;
+			order: 0;
+		}
+
+		.header-menu {
+			display: none;
+		}
+
+		.search {
+			display: block;
+			order: 3;
+			color: #000;
+		}
+
+		.search-card {
+			display: flex;
+			align-items: center;
+			justify-content: flex-end;
+			order: 4;
+		}
+
+		.search {
+			border: none;
+			background: none;
+			margin-right: 10px;
+			order: 0;
+		}
+
+		.offer {
+			position: relative;
+			flex-direction: column;
+
+			&__img-girls {
+				flex-shrink: 3;
+
+				img {
+					height: 75vh;
+				}
+			}
+		}
+
+		.offer-content {
+			position: absolute;
+			padding-top: 250px;
+			bottom: -1px;
+			background: rgb(255, 255, 255);
+			background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 94%);
+
+			&__title {
+				max-width: 60%;
+				margin: 0 auto;
+			}
+		}
 	}
+
 }
 
-.offer-content {
-	flex-shrink: 2;
-	text-align: center;
-	color: $colorAllText;
+@media screen and (max-width: 768px) {
+	.header {
+		.offer-content {
+			&__title {
+				max-width: 100%;
+				font-size: 28px;
 
-	&__title {
-		font-weight: 300;
-		font-size: 36px;
-		line-height: 140%;
+			}
+
+			&__subtitle {
+				font-size: 16px;
+				line-height: 24px;
+			}
+		}
 	}
 
-	&__subtitle {
-		font-size: 20px;
-		line-height: 30px;
-		margin-top: 13px;
-		margin-bottom: 35px;
-		padding: 0 100px;
+}
+
+@media screen and (max-width: 576px) {
+	.header {
+		.navigation {
+			padding-top: 15px;
+			.logo {
+				width: 150px;
+			}
+		}
+		.open-menu-btn {
+			font-size: 14px;
+		}
+		.offer {
+			&__img-girls img {
+				object-fit: cover;
+			}
+		}
+		.offer-content__subtitle {
+			padding: 0 10%;
+		}
 	}
 }

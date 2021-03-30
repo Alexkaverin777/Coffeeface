@@ -2,105 +2,115 @@
 @import "../../node_modules/slick-carousel/slick/slick-theme.css";
 
 body {
-    font-family: 'Poppins', sans-serif;
-    font-size: 18px;
-    color: #fff;
+	font-family: 'Poppins', sans-serif;
+	font-size: 18px;
+	color: #fff;
 }
 
-body *{
-    box-sizing: border-box;
+body * {
+	box-sizing: border-box;
 }
+
 input {
-    outline: none;
+	outline: none;
 }
 
 h2 {
-    font-weight: 200;
-    font-size: 40px;
-    line-height: 150%;
+	font-weight: 200;
+	font-size: 40px;
+	line-height: 150%;
 }
-.dn {
-    display: none;
+
+.dn, .isActive {
+	display: none;
+}
+.active {
+    display: block !important;
 }
 
 section {
-    color: $colorAllText;
+	color: $colorAllText;
 }
 
 .container {
-    max-width: 1315px;
-    margin: 0 auto;
+	max-width: 1315px;
+	margin: 0 auto;
 }
 
 
 .open-menu-btn {
-    display: none;
-    border: none;
-    background: none;
-    padding: 6px 0;
-    cursor: pointer;
-    position: relative;
-    z-index: 10;
-    span {
-        width: 25px;
-        display: block;
-        height: 2px;
-        background-color: #fff;
-        position: relative;
-        z-index: 20;
-        &::after {
-            @include btn-menu-aft-bfr (25px, 2px);
-            bottom: 5px;
-            left: 0;
-        }
+	display: none;
+	border: none;
+	background: none;
+	padding: 6px 0;
+	cursor: pointer;
+	position: relative;
+	z-index: 10;
 
-        &::before {
-            @include btn-menu-aft-bfr (25px, 2px);
-            top: 5px;
-            left: 0;
-        }
-    }    
+	span {
+		width: 25px;
+		display: block;
+		height: 2px;
+		background-color: #fff;
+		position: relative;
+		z-index: 20;
+
+		&::after {
+			@include btn-menu-aft-bfr (25px, 2px);
+			bottom: 5px;
+			left: 0;
+		}
+
+		&::before {
+			@include btn-menu-aft-bfr (25px, 2px);
+			top: 5px;
+			left: 0;
+		}
+	}
 }
 
 li {
-    list-style: none;
+	list-style: none;
 }
 
-a{
-    text-decoration: none;
+a {
+	text-decoration: none;
 }
 
 
 .title {
-    text-align: center;
-    position: relative;
-    font-size: 18px;
-    padding-bottom: 10px;
-    line-height: 25px;
-    &::before {
-        content: '';
-        width: 30px;
-        height: 2px;
-        background-color: #ffff;
-        position: absolute;
-        bottom: 5px;
+	text-align: center;
+	position: relative;
+	font-size: 18px;
+	padding-bottom: 10px;
+	line-height: 25px;
 
-    }
+	&::before {
+		content: '';
+		width: 30px;
+		height: 2px;
+		background-color: #ffff;
+		position: absolute;
+		bottom: 5px;
+
+	}
 }
+
 .btn {
-    background-color: $colorBlack;
-    font-size: 16px;
-    line-height: 24px;
-    padding: 20px 100px;
-    color: #fff;
-    border: none;
-    transition: all .3s ease;
-    cursor: pointer;
-    outline: none;
-    min-width: 143px;
-    &:hover {
-        box-shadow: 0 1px 15px 0 rgba(0,0,0, .5);
-    }
+	background-color: $colorBlack;
+	font-size: 16px;
+	line-height: 24px;
+	padding: 20px 100px;
+	color: #fff;
+	border: none;
+	transition: all .3s ease;
+	cursor: pointer;
+	outline: none;
+	min-width: 143px;
+
+	&:hover {
+		box-shadow: 0 1px 15px 0 rgba(0, 0, 0, .5);
+	}
 
 
 }
