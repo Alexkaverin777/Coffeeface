@@ -1,9 +1,7 @@
 .coffeeface-wrapper {
 	display: flex;
 	position: relative;
-
 }
-
 
 .coffeeface {
 	background-color: #000;
@@ -13,7 +11,7 @@
 	&__content {
 		text-align: center;
 		flex-basis: 50%;
-		padding: 0px 9%;
+		padding: 0 9%;
 
 		.logo {
 			display: flex;
@@ -33,8 +31,59 @@
 			position: absolute;
 			top: -180px;
 			left: 0;
+			max-width: 450px;
 		}
 	}
 
 }
 
+@media screen and (max-width: 992px) {
+	.coffeeface-wrapper {
+		align-items: center;
+	}
+	.coffeeface {
+		padding: 0;
+		&__content {
+			padding: 0 40px;
+			flex-basis: 60%;
+		}
+		&__img {
+			max-width: 350px;
+			flex-basis: auto;
+			img {
+				position: relative;
+				top: 0;
+				max-width: 100%;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.coffeeface-wrapper {
+		flex-direction: column-reverse;
+		justify-content: center;
+	}
+	.coffeeface {
+		padding: 0 25px;
+		&__content {
+			padding: 0 0 50px;
+
+		}
+		&__text {
+			font-size: 16px;
+		}
+		&__img {
+			margin-bottom: 30px;
+			flex-basis: auto;
+			text-align: center;
+
+			min-width: 270px;
+			max-width: 450px;
+			img {
+				top: -10px;
+				position: relative;
+			}
+		}
+	}
+}

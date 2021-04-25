@@ -15,346 +15,367 @@
     <link rel="stylesheet" href="css/style.min.css"/>
 </head>
 <body>
-<header class="header" id="header">
-    <div class="black-line">
-        <p class="black-line__text">Free shipping over $100</p>
-    </div>
-    <div class="container">
-        <div class="navigation">
-            <div class="logo">
-                <a href="#" class="logo__link">
-                    <img src="./img/coffee-face-logo.png" alt="Логотип Coffeeface">
-                </a>
-            </div>
-            <button class="open-menu-btn isActive">Menu</button>
-            <nav class="header-menu">
-                <li class="header-menu__item">
-                    <a href="#offer" class="header-menu__link scroll-link">Home</a>
-                </li>
-                <li class="header-menu__item">
-                    <a href="#benefit" class="header-menu__link scroll-link">Shop</a>
-                </li>
-                <li class="header-menu__item">
-                    <a href="#exfoliate" class="header-menu__link scroll-link">About</a>
-                </li>
-                <li class="header-menu__item">
-                    <a href="#instruction" class="header-menu__link scroll-link">What is Coffeeface</a>
-                </li>
-                <li class="header-menu__item">
-                    <a href="#footer" class="header-menu__link scroll-link">Contact</a>
-                </li>
-            </nav>
-            <div class="search-card">
-                <button class="search">
-                    <i class="fas fa-search"></i>
-                </button>
-                <div class="header-cart">
-                    <img src="./img/cart.svg" alt="cart">
-                    <span class="header-cart__quantity">3</span>
-                </div>
-            </div>
+<div class="wrapper">
+    <header class="header" id="header">
+        <div class="black-line">
+            <p class="black-line__text">Free shipping over $100</p>
         </div>
-        <div class="offer" id="offer">
-            <div class="offer__img-girls">
-                <img src="./img/header-womens.png" alt="girls">
-            </div>
-            <div class="offer-content">
-                <h2 class="offer-content__title">
-                    A Revolution in Antibacterial, Antiviral Facial Cleaning
-                </h2>
-                <p class="offer-content__subtitle">
-                    Manuka honey antibacterial properties that help protect and seal your skin
-                </p>
-                <button class="btn offer-content__btn">Shop now</button>
-            </div>
-        </div>
-    </div>
-</header>
-<section class="coffeeface dn" id="coffeeface">
-    <div class="container">
-        <div class="coffeeface-wrapper">
-            <div class="coffeeface__content">
-                <div class="logo">
-                    <a href="#header" class="logo__link">
+        <div class="container">
+            <div class="navigation">
+                <div class="header-logo">
+                    <a href="#" class="logo__link">
                         <img src="./img/coffee-face-logo.png" alt="Логотип Coffeeface">
                     </a>
                 </div>
-                <p class="coffeeface__text">
-                    is an innovative approach to beauty. Uncomplicated. Sophisticated. Declutter your daily skincare
-                    routine.
-                </p>
-            </div>
-            <div class="coffeeface__img">
-                <img src="./img/section-women.png" alt="women">
-            </div>
-        </div>
-    </div>
-</section>
-<section class="benefit dn" id="benefit">
-    <div class="container">
-        <div class="benefit-wrapper">
-            <div class="benefit__img">
-                <img src="./img/section1.png" alt="women">
-            </div>
-            <div class="benefit__content">
-                <h3 class="benefit__title">
-                    3-in-1 Pads Exfoliate. Serum. Moisturize.
-                </h3>
-                <div class="benefit__reviews">
-                    Reviews
-                    <span><i class="fas fa-star"></i></span>
-                    <span><i class="fas fa-star"></i></span>
-                    <span><i class="fas fa-star"></i></span>
-                    <span><i class="fas fa-star"></i></span>
-                    <span><i class="fas fa-star"></i></span>
+                <div class="menu-header-wrapper">
+                    <button class="open-menu-btn">Menu</button>
+                    <!--                <button class=close-menu-btn">X</button>-->
+                    <nav class="header-menu">
+                        <li class="header-menu__item--btn-close">
+                            <button class="close-menu-btn">X</button>
+                        </li>
+                        <li class="header-menu__item">
+                            <a class="header-menu__link scroll-link" href="#coffeeface">Home</a>
+                        </li>
+                        <li class="header-menu__item">
+                            <a class="header-menu__link scroll-link" href="#benefit">Shop</a>
+                        </li>
+                        <li class="header-menu__item">
+                            <a class="header-menu__link scroll-link" href="#exfoliate">About</a>
+                        </li>
+                        <li class="header-menu__item">
+                            <a class="header-menu__link scroll-link" href="#instruction">What is Coffeeface</a>
+                        </li>
+                        <li class="header-menu__item">
+                            <a href="#footer" class="header-menu__link scroll-link">Contact</a>
+                        </li>
+                    </nav>
                 </div>
-                <p class="benefit__text">
-                    Stabilized caffeine works hard to immediately stimulate collagen production in your skin, plus it
-                    provides a wake-you-up tightening effect.
-                </p>
-                <div class="benefit__prices">
-                    <span class="benefit__oldPrice">$84.99</span>
-                    <span class="benefit__price">$64.99</span>
-                </div>
-                <button class="btn benefit__btn">
-                    Buy it now
-                </button>
-            </div>
-        </div>
-    </div>
-</section>
-<section class="exfoliate dn" id="exfoliate">
-    <div class="container">
-        <h1 class="exfoliate-title">
-            Exfoliate. Serum. Moisturize.
-        </h1>
-        <div class="exfoliate__overlay"></div>
-    </div>
-</section>
-<section class="instruction dn" id="instruction">
-    <div class="container">
-        <h2 class="instruction__little-title">
-            How to use the CoffeeFace
-        </h2>
-        <div class="instruction-wrapper">
-            <div class="instruction-item">
-                <div class="instruction-item__img">
-                    <img src="./img/item.svg" alt="">
-                </div>
-                <p class="instruction-item__description">
-                    Wash your face
-                </p>
-            </div>
-            <div class="instruction-item">
-                <div class="instruction-item__img">
-                    <img src="./img/item2.svg" alt="">
-                </div>
-                <p class="instruction-item__description">
-                    Apply on the skin
-                </p>
-            </div>
-            <div class="instruction-item">
-                <div class="instruction-item__img">
-                    <img src="./img/item3.svg" alt="">
-                </div>
-                <p class="instruction-item__description">
-                    Wait 5 minutes
-                </p>
-            </div>
-        </div>
-    </div>
-</section>
-<section class="section-slider dn" id="section-slider">
-    <h2 class="section-slider__title">
-        Testimonials
-    </h2>
-    <div class="slider-users">
-        <div class="slider-item ">
-            <div class="slider-item__user">
-                <div class="slider-item__foto">
-                    <img src="./img/userFotoAnna.png" alt="user foto AnnaK.">
-                </div>
-                <h5 class="slider-item__name">Anna K.</h5>
-            </div>
-            <p class="slider-item__text">
-                The passage experienced a surge in popularity during the 1960s when Letraset used it on their
-                dry-transfer sheets, and again during the 90s as desktop publishers bundled the text with their
-                software. Today it's seen all around the web; on templates, websites, and stock designs. Use our
-                generator to get your own, or read on for the authoritative history of lorem ipsum.
-            </p>
-        </div>
-        <div class="slider-item ">
-            <div class="slider-item__user">
-                <div class="slider-item__foto">
-                    <img src="./img/userFotoAnna.png" alt="user foto AnnaK.">
-                </div>
-                <h5 class="slider-item__name">Anna K.</h5>
-            </div>
-            <p class="slider-item__text">
-                The passage experienced a surge in popularity during the 1960s when Letraset used it on their
-                dry-transfer sheets, and again during the 90s as desktop publishers bundled the text with their
-                software. Today it's seen all around the web; on templates, websites, and stock designs. Use our
-                generator to get your own, or read on for the authoritative history of lorem ipsum.
-            </p>
-        </div>
-        <div class="slider-item">
-            <div class="slider-item__user">
-                <div class="slider-item__foto">
-                    <img src="./img/userFotoAnna.png" alt="user foto AnnaK.">
-                </div>
-                <h5 class="slider-item__name">Anna K.</h5>
-            </div>
-            <p class="slider-item__text">
-                The passage experienced a surge in popularity during the 1960s when Letraset used it on their
-                dry-transfer sheets, and again during the 90s as desktop publishers bundled the text with their
-                software. Today it's seen all around the web; on templates, websites, and stock designs. Use our
-                generator to get your own, or read on for the authoritative history of lorem ipsum.
-            </p>
-        </div>
-    </div>
 
-</section>
-<section class="section-images dn" id="section-images">
-    <div class="container">
-        <div class="section-images__block-img">
-            <img src="./img/aloe.png" alt="Aloe" class="section-images__img">
-        </div>
-    </div>
-</section>
-<section class="section-blog dn" id="section-blog">
-    <div class="container">
-        <div class="blog">
-            <h2 class="blog__title">Blog</h2>
-            <div class="blog-wrapper">
-                <div class="blog-wrapper__item">
-                    <div class="blog-wrapper__img">
-                        <img src="./img/kari-shea.png" alt="">
-                        <div class="blog-overlay"></div>
+                <div class="search-card">
+                    <button class="search">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <div class="header-cart">
+                        <img src="./img/cart.svg" alt="cart">
+                        <span class="header-cart__quantity">3</span>
                     </div>
-                    <p class="blog-wrapper__text">
-                        Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print
-                    </p>
-                </div>
-                <div class="blog-wrapper__item">
-                    <div class="blog-wrapper__img">
-                        <img src="./img/kari-shea2.png" alt="">
-                        <div class="blog-overlay"></div>
-                    </div>
-                    <p class="blog-wrapper__text">
-                        Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print
-                    </p>
-                </div>
-                <div class="blog-wrapper__item">
-                    <div class="blog-wrapper__img">
-                        <img src="./img/kari-shea3.png" alt="">
-                        <div class="blog-overlay"></div>
-                    </div>
-                    <p class="blog-wrapper__text">
-                        Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print
-                    </p>
                 </div>
             </div>
-            <div class="blog-brand">
-                <img src="./img/image-brand.png" alt="the brand">
+            <div class="offer" id="offer">
+                <div class="offer__img-girls">
+                    <img src="./img/header-womens.png" alt="girls">
+                </div>
+                <div class="offer-content">
+                    <h2 class="offer-content__title">
+                        A Revolution in Antibacterial, Antiviral Facial Cleaning
+                    </h2>
+                    <p class="offer-content__subtitle">
+                        Manuka honey antibacterial properties that help protect and seal your skin
+                    </p>
+                    <button class="btn offer-content__btn">Shop now</button>
+                </div>
             </div>
         </div>
-    </div>
-</section>
-<section class="subscribe dn" id="subscribe">
-    <div class="container">
-        <div class="subscribe__content">
-            <h2 class="subscribe__title">
-                Subscribe to coffeeface emails
+    </header>
+    <main class="main">
+        <section class="coffeeface " id="coffeeface">
+            <div class="container">
+                <div class="coffeeface-wrapper">
+                    <div class="coffeeface__content">
+                        <div class="logo">
+                            <a href="#header" class="logo__link">
+                                <img src="./img/coffee-face-logo.png" alt="Логотип Coffeeface">
+                            </a>
+                        </div>
+                        <p class="coffeeface__text">
+                            is an innovative approach to beauty. Uncomplicated. Sophisticated. Declutter your daily
+                            skincare
+                            routine.
+                        </p>
+                    </div>
+                    <div class="coffeeface__img">
+                        <img src="./img/section-women.png" alt="women">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="benefit" id="benefit">
+            <div class="container">
+                <div class="benefit-wrapper">
+                    <div class="benefit__img">
+                        <img src="./img/section1.png" alt="women">
+                    </div>
+                    <div class="benefit__content">
+                        <h3 class="benefit__title">
+                            3-in-1 Pads Exfoliate. Serum. Moisturize.
+                        </h3>
+                        <div class="benefit__reviews">
+                            Reviews
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star"></i></span>
+                        </div>
+                        <p class="benefit__text">
+                            Stabilized caffeine works hard to immediately stimulate collagen production in your skin,
+                            plus it
+                            provides a wake-you-up tightening effect.
+                        </p>
+                        <div class="benefit__prices">
+                            <span class="benefit__oldPrice">$84.99</span>
+                            <span class="benefit__price">$64.99</span>
+                        </div>
+                        <button class="btn benefit__btn">
+                            Buy it now
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="exfoliate " id="exfoliate">
+            <div class="container">
+                <h1 class="exfoliate-title">
+                    Exfoliate. Serum. Moisturize.
+                </h1>
+                <div class="exfoliate__overlay"></div>
+            </div>
+        </section>
+        <section class="instruction" id="instruction">
+            <div class="container">
+                <h2 class="instruction__little-title">
+                    How to use the CoffeeFace
+                </h2>
+                <div class="instruction-wrapper">
+                    <div class="instruction-item instruction-item--position-top">
+                        <div class="instruction-item__img">
+                            <img src="./img/item.svg" alt="">
+                        </div>
+                        <p class="instruction-item__description">
+                            Wash your face
+                        </p>
+                    </div>
+                    <div class="instruction-item instruction-item--position-bottom">
+                        <div class="instruction-item__img">
+                            <img src="./img/item2.svg" alt="">
+                        </div>
+                        <p class="instruction-item__description">
+                            Apply on the skin
+                        </p>
+                    </div>
+                    <div class="instruction-item instruction-item--position-center">
+                        <div class="instruction-item__img">
+                            <img src="./img/item3.svg" alt="">
+                        </div>
+                        <p class="instruction-item__description">
+                            Wait 5 minutes
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-slider" id="section-slider">
+            <h2 class="section-slider__title">
+                Testimonials
             </h2>
-            <p class="subscribe__text">
-                Subscribe to our coffeeface emails and get exclusive first access to new products, free surveys,
-                free education and beauty tips, and live & virtual events. Unsubscribe anytime. For more
-                information, see our privacy policy.
-            </p>
-            <form class="subscribe-form" action="#">
-                <input class="subscribe-form__input" type="email" pattern=".+@+.+" size="30" placeholder="Your email"
-                       required>
-                <button class="btn subscribe-form__btn">Subscribe</button>
-            </form>
-        </div>
-    </div>
-    <div class="subscribe__img">
-        <img src="./img/man.png" alt="">
-    </div>
-</section>
-<section class="face dn" id="face">
-    <div class="container-full">
-        <h2 class="face__title">
-            @coffee_face
-        </h2>
-        <div class="face-wrapper-foto">
-            <div class="face-slider">
-                <div class="face-slider__item"><img src="./img/face-foto.png" alt=""></div>
-                <div class="face-slider__item"><img src="./img/face-foto2.png" alt=""></div>
-                <div class="face-slider__item"><img src="./img/face-foto3.png" alt=""></div>
-                <div class="face-slider__item"><img src="./img/face-foto.png" alt=""></div>
-                <div class="face-slider__item"><img src="./img/face-foto2.png" alt=""></div>
-                <div class="face-slider__item"><img src="./img/face-foto3.png" alt=""></div>
-                <div class="face-slider__item"><img src="./img/face-foto.png" alt=""></div>
-                <div class="face-slider__item"><img src="./img/face-foto2.png" alt=""></div>
-                <div class="face-slider__item"><img src="./img/face-foto3.png" alt=""></div>
-                <div class="face-slider__item"><img src="./img/face-foto.png" alt=""></div>
-                <div class="face-slider__item"><img src="./img/face-foto2.png" alt=""></div>
-                <div class="face-slider__item"><img src="./img/face-foto3.png" alt=""></div>
+            <div class="slider-users">
+                <div class="slider-item ">
+                    <div class="slider-item__user">
+                        <div class="slider-item__foto">
+                            <img src="./img/userFotoAnna.png" alt="user foto AnnaK.">
+                        </div>
+                        <h5 class="slider-item__name">Anna K.</h5>
+                    </div>
+                    <p class="slider-item__text">
+                        The passage experienced a surge in popularity during the 1960s when Letraset used it on their
+                        dry-transfer sheets, and again during the 90s as desktop publishers bundled the text with their
+                        software. Today it's seen all around the web; on templates, websites, and stock designs. Use our
+                        generator to get your own, or read on for the authoritative history of lorem ipsum.
+                    </p>
+                </div>
+                <div class="slider-item ">
+                    <div class="slider-item__user">
+                        <div class="slider-item__foto">
+                            <img src="./img/userFotoAnna.png" alt="user foto AnnaK.">
+                        </div>
+                        <h5 class="slider-item__name">Anna K.</h5>
+                    </div>
+                    <p class="slider-item__text">
+                        The passage experienced a surge in popularity during the 1960s when Letraset used it on their
+                        dry-transfer sheets, and again during the 90s as desktop publishers bundled the text with their
+                        software. Today it's seen all around the web; on templates, websites, and stock designs. Use our
+                        generator to get your own, or read on for the authoritative history of lorem ipsum.
+                    </p>
+                </div>
+                <div class="slider-item">
+                    <div class="slider-item__user">
+                        <div class="slider-item__foto">
+                            <img src="./img/userFotoAnna.png" alt="user foto AnnaK.">
+                        </div>
+                        <h5 class="slider-item__name">Anna K.</h5>
+                    </div>
+                    <p class="slider-item__text">
+                        The passage experienced a surge in popularity during the 1960s when Letraset used it on their
+                        dry-transfer sheets, and again during the 90s as desktop publishers bundled the text with their
+                        software. Today it's seen all around the web; on templates, websites, and stock designs. Use our
+                        generator to get your own, or read on for the authoritative history of lorem ipsum.
+                    </p>
+                </div>
+            </div>
+
+        </section>
+        <section class="section-images" id="section-images">
+            <div class="container">
+                <div class="section-images__block-img">
+                    <img src="./img/aloe.png" alt="Aloe" class="section-images__img">
+                </div>
+            </div>
+        </section>
+        <section class="section-blog" id="section-blog">
+            <div class="container">
+                <div class="blog">
+                    <h2 class="blog__title">Blog</h2>
+                    <div class="blog-slider blog-wrapper">
+                        <div class="blog-wrapper__item">
+                            <div class="blog-wrapper__img">
+                                <img src="./img/kari-shea.png" alt="">
+                                <div class="blog-overlay"></div>
+                            </div>
+                            <p class="blog-wrapper__text">
+                                Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print
+                            </p>
+                        </div>
+                        <div class="blog-wrapper__item">
+                            <div class="blog-wrapper__img">
+                                <img src="./img/kari-shea2.png" alt="">
+                                <div class="blog-overlay"></div>
+                            </div>
+                            <p class="blog-wrapper__text">
+                                Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print
+                            </p>
+                        </div>
+                        <div class="blog-wrapper__item">
+                            <div class="blog-wrapper__img">
+                                <img src="./img/kari-shea3.png" alt="">
+                                <div class="blog-overlay"></div>
+                            </div>
+                            <p class="blog-wrapper__text">
+                                Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print
+                            </p>
+                        </div>
+                    </div>
+                    <div class="blog-brand">
+                        <!--                        <img src="./img/image-brand.png" alt="the brand">-->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="subscribe" id="subscribe">
+            <div class="container">
+                <div class="wrapper-subscribe">
+                    <div class="subscribe__overlay"></div>
+                    <div class="subscribe__content">
+                        <h2 class="subscribe__title">
+                            Subscribe to coffeeface emails
+                        </h2>
+                        <p class="subscribe__text">
+                            Subscribe to our coffeeface emails and get exclusive first access to new products, free
+                            surveys,
+                            free education and beauty tips, and live & virtual events. Unsubscribe anytime. For more
+                            information, see our privacy policy.
+                        </p>
+                        <form class="subscribe-form" action="#">
+                            <input class="subscribe-form__input" type="email" pattern=".+@+.+" size="30"
+                                   placeholder="Your email"
+                                   required>
+                            <button class="btn subscribe-form__btn">Subscribe</button>
+                        </form>
+                    </div>
+                    <div class="subscribe__img">
+                        <img src="./img/man.png" alt="">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section class="face" id="face">
+            <div class="container-full">
+                <h2 class="face__title">
+                    @coffee_face
+                </h2>
+                <div class="face-wrapper-foto">
+                    <div class="face-slider">
+                        <div class="face-slider__item"><img src="./img/face-foto.png" alt=""></div>
+                        <div class="face-slider__item"><img src="./img/face-foto2.png" alt=""></div>
+                        <div class="face-slider__item"><img src="./img/face-foto3.png" alt=""></div>
+                        <div class="face-slider__item"><img src="./img/face-foto.png" alt=""></div>
+                        <div class="face-slider__item"><img src="./img/face-foto2.png" alt=""></div>
+                        <div class="face-slider__item"><img src="./img/face-foto3.png" alt=""></div>
+                        <div class="face-slider__item"><img src="./img/face-foto.png" alt=""></div>
+                        <div class="face-slider__item"><img src="./img/face-foto2.png" alt=""></div>
+                        <div class="face-slider__item"><img src="./img/face-foto3.png" alt=""></div>
+                        <div class="face-slider__item"><img src="./img/face-foto.png" alt=""></div>
+                        <div class="face-slider__item"><img src="./img/face-foto2.png" alt=""></div>
+                        <div class="face-slider__item"><img src="./img/face-foto3.png" alt=""></div>
+                    </div>
+                </div>
+                <div class="face__instagram">
+                    <a class=" face-instagram-link" href="#"></a>
+                    Join us on instagram for new products, great giveaways and more!
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer dn " id="footer">
+        <div class="container">
+            <div class="blot">
+                <img src="./img/footer-group.png" alt="blot">
+            </div>
+            <div class="wrapper-logo-social">
+                <div class="logo footer-logo">
+                    <a href="#header">
+                        <img src="./img/coffee-face-logo.png" alt="Logo">
+                    </a>
+                </div>
+                <div class="social">
+                    <a class="social__link" href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a class="social__link" href="#"><i class="fab fa-twitter"></i></a>
+                    <a class="social__link" href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="wrapper-lists">
+                <ul class="footer-list">
+                    <li class="footer-list__item"><a class="footer-list__link" href="#">Home page</a></li>
+                    <li class="footer-list__item"><a class="footer-list__link" href="#">About coffeeface</a></li>
+                    <li class="footer-list__item"><a class="footer-list__link" href="#">Coffeeface the Community</a>
+                    </li>
+                </ul>
+                <ul class="footer-list">
+                    <li class="footer-list__item"><a class="footer-list__link" href="#">Privacy Policy</a></li>
+                    <li class="footer-list__item"><a class="footer-list__link" href="#">Shipping-Terms</a></li>
+                    <li class="footer-list__item"><a class="footer-list__link" href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="cards">
+                <a href="#" class="cards__item"><img src="./img/visa.png" alt="Visa"></a>
+                <a href="#" class="cards__item"><img src="./img/amex.png" alt="Amex"></a>
+                <a href="#" class="cards__item"><img src="./img/mc.png" alt="Mastercard"></a>
+                <a href="#" class="cards__item"><img src="./img/jbc.png" alt="JCB"></a>
+                <a href="#" class="cards__item"><img src="./img/discover.png" alt="Descover"></a>
+                <a href="#" class="cards__item"><img src="./img/dinersClub.png" alt="DinersClub"></a>
+            </div>
+            <div class="footer__row">
+                <p>
+                    © 2020, Coffeeface
+                </p>
+                <p>
+                    Powered by Shopify
+                </p>
             </div>
         </div>
-        <p class="face__instagram">
-            Join us on instagram for new products, great giveaways and more!
-        </p>
-    </div>
-</section>
-<footer class="footer dn" id="footer">
-    <div class="container">
-        <div class="blot">
-            <img src="./img/footer-group.png" alt="blot">
-        </div>
-        <div class="wrapper-logo-social">
-            <div class="logo footer-logo">
-                <a href="#header">
-                    <img src="./img/coffee-face-logo.png" alt="Logo">
-                </a>
-            </div>
-            <div class="social">
-                <a href="#" class="social__link"><i class="fab fa-facebook-f"></i></a>
-                <a href="#" class="social__link"><i class="fab fa-twitter"></i></a>
-                <a href="#" class="social__link"><i class="fab fa-instagram"></i></a>
-            </div>
-        </div>
-        <div class="wrapper-lists">
-            <ul class="footer-list">
-                <li class="footer-list__item"><a href="#">Home page</a></li>
-                <li class="footer-list__item"><a href="#">About coffeeface</a></li>
-                <li class="footer-list__item"><a href="#">Coffeeface the Community</a></li>
-            </ul>
-            <ul class="footer-list">
-                <li class="footer-list__item"><a href="#">Privacy Policy</a></li>
-                <li class="footer-list__item"><a href="#">Shipping-Terms</a></li>
-                <li class="footer-list__item"><a href="#">Contact Us</a></li>
-            </ul>
-        </div>
-        <div class="cards">
-            <a href="#" class="cards__item"><img src="./img/visa.png" alt="Visa"></a>
-            <a href="#" class="cards__item"><img src="./img/amex.png" alt="Amex"></a>
-            <a href="#" class="cards__item"><img src="./img/mc.png" alt="Mastercard"></a>
-            <a href="#" class="cards__item"><img src="./img/jbc.png" alt="JCB"></a>
-            <a href="#" class="cards__item"><img src="./img/discover.png" alt="Descover"></a>
-            <a href="#" class="cards__item"><img src="./img/dinersClub.png" alt="DinersClub"></a>
-        </div>
-        <div class="footer__row">
-            <p>
-                © 2020, Coffeeface
-            </p>
-            <p>
-                Powered by Shopify
-            </p>
-        </div>
-    </div>
-</footer>
+    </footer>
+</div>
 <script src="js/main.min.js" defer></script>
 </body>
 </html>

@@ -2,24 +2,23 @@
 	background-image: url("../img/HowToUse.png");
 	background-repeat: no-repeat;
 	background-position: top center;
-	background-color: rgba(252,209,194, .2);
+	background-color: rgba(252, 209, 194, .2);
 	padding: 128px 0;
 	text-align-last: center;
+}
 
-
-
-	.instruction-wrapper {
-		margin-top: 60px;
-		display: flex;
-		justify-content: space-evenly;
-		align-items: center;
-	}
+.instruction-wrapper {
+	margin-top: 60px;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
 }
 
 .instruction-item {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+
 	&__img {
 		border: 1px solid rgba(138, 81, 55, 1);
 		border-radius: 50%;
@@ -37,3 +36,40 @@
 	}
 }
 
+@media screen and (max-width: 576px) {
+	.instruction {
+		padding: 20px;
+		background-size: 100%;
+	}
+
+	.instruction-wrapper {
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	.instruction__little-title {
+		text-align: center;
+		font-size: 30px;
+	}
+
+	.instruction-item {
+		margin-bottom: 32px;
+		&__img {
+			margin-bottom: 16px;
+			padding: 20px;
+		}
+		&__description {
+			font-size: 16px;
+		}
+		&--position-top{
+			order: 1;
+		}
+		&--position-center{
+			order: 2;
+		}
+		&--position-bottom{
+			order: 3;
+		}
+	}
+
+}
